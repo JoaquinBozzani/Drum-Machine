@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Drum Kits</title>
+</head>
+<body>
+    <h1 class="title" data-background="1">DRUMS-1</h1>
+    <!-- drumpads -->
+    <div class="pads" data-color="1">
+        <div data-pad="65" class="pad">
+            <kbd>A</kbd>
+            <p class="sound">clap</p>
+        </div>
+        <div data-pad="83" class="pad">
+            <kbd>S</kbd>
+            <p class="sound">hihat</p>
+        </div>
+        <div data-pad="68" class="pad">
+            <kbd>D</kbd>
+            <p class="sound">kick</p>
+        </div>
+        <div data-pad="70" class="pad">
+            <kbd>F</kbd>
+            <p class="sound">openhat</p>
+        </div>
+        <div data-pad="71" class="pad">
+            <kbd>G</kbd>
+            <p class="sound">boom</p>
+        </div>
+        <div data-pad="72" class="pad">
+            <kbd>H</kbd>
+            <p class="sound">ride</p>
+        </div>
+        <div data-pad="74" class="pad">
+            <kbd>J</kbd>
+            <p class="sound">snare</p>
+        </div>
+        <div data-pad="75" class="pad">
+            <kbd>K</kbd>
+            <p class="sound">tom</p>
+        </div>
+        <div data-pad="76" class="pad">
+            <kbd>L</kbd>
+            <p class="sound">misc</p>
+        </div>
+    </div>
+    
+    <div class="button-container">
+        <button class="drum-selector" data-drumset="1"></button>
+        <button class="drum-selector" data-drumset="2"></button>
+        <button class="drum-selector" data-drumset="3"></button>
+    </div>
+        <!-- audio files for drums-->
+    <audio data-pad="65" src="sounds/sounds-1/clap-1.wav"></audio>
+    <audio data-pad="83" src="sounds/sounds-1/hihat-1.wav"></audio>
+    <audio data-pad="68" src="sounds/sounds-1/kick-1.wav"></audio>
+    <audio data-pad="70" src="sounds/sounds-1/openhat-1.wav"></audio>
+    <audio data-pad="71" src="sounds/sounds-1/boom-1.wav"></audio>
+    <audio data-pad="72" src="sounds/sounds-1/ride-1.wav"></audio>
+    <audio data-pad="74" src="sounds/sounds-1/snare-1.wav"></audio>
+    <audio data-pad="75" src="sounds/sounds-1/tom-1.wav"></audio>
+    <audio data-pad="76" src="sounds/sounds-1/misc-1.wav"></audio>
+
+
+    <script src="index.js"></script>
+</body>
+</html>

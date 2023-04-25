@@ -1,0 +1,112 @@
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    margin: 0;
+    background-color: black;
+    overflow: hidden;
+}
+
+/* title ----- */
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vh;
+    font-size: 9rem;
+
+    color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+    background-size: 120%;
+    animation: bg-animation 30s cubic-bezier(.31,.75,.84,.67) infinite;
+}
+
+/* change background depending on drumkit selected */
+h1[data-background="1"] {
+    background-image: url(backgrounds/Drumkit-1.jpg);
+}
+
+h1[data-background="2"] {
+    background-image: url(backgrounds/Drumkit-2.jpg);
+}
+
+
+h1[data-background="3"] {
+    background-image: url(backgrounds/Drumkit-3.jpg);
+}
+
+
+/* pads ----- */
+.pads {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50vh 50vh 0 50vh;   
+}
+
+/* change color depending on title background */
+.pads[data-color="1"] {
+    color: #e0e3dc;
+}
+
+.pads[data-color="2"] {
+    color: #c0513e;
+}
+
+.pads[data-color="3"] {
+    color: #606060;
+}
+
+
+.pad {
+    margin: 2vh;
+    padding: 2vh;
+    transition: all .07s ease;
+}
+
+/* when active make pads bigger */
+.playing {
+    transform: scale(1.1);
+}
+
+/* when playing change color depending on title background */
+.pads[data-color="1"] .playing {
+    color: #b7595b;
+}
+
+.pads[data-color="2"] .playing {
+    color: #d9bd52;
+}
+
+.pads[data-color="3"] .playing {
+    color: #9a9a9a;
+}
+
+/* buttons to select drumkit */
+.button-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.drum-selector {
+    display: flex;
+    justify-content: right;
+    margin: 1vw;
+    padding: 1vw;
+    background-color: #303030;
+    border-radius: 5px;
+    border: solid black;
+    outline: none;
+    cursor: pointer;
+}
+
+
+/* animation for title */
+@keyframes bg-animation {
+    0% {background-position: 0% 0%;}
+    50% {background-position: 100% 100%;}
+    100% {background-position: 0% 0%;}
+}
